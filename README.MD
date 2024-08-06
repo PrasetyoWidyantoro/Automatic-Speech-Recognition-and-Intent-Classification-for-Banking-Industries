@@ -27,6 +27,7 @@ Preprocess transcribed text for intent recognition in multiple languages, clean 
 ## Machine Learning Metrics
 
 - **Word Error Rate (WER)**: The number of errors (insertions, deletions, and substitutions) divided by the total number of words spoken. WER is a primary measure of accuracy for ASR systems. Lower WER indicates better performance.
+- **Accuracy**: The proportion of correctly classified intents out of the total number of intents. Higher accuracy indicates better model performance in identifying user intents.
 
 ## Data Understanding & Data Preparation
 
@@ -50,6 +51,44 @@ The sample is split into:
 - **Train**: 60%
 - **Validation**: 20%
 - **Testing**: 20%
+
+### Language Varieties
+
+The dataset includes the following language varieties:
+
+- **0**: cs-CZ - Czech language used in the Czech Republic
+- **1**: de-DE - German language used in Germany
+- **2**: en-AU - English language used in Australia
+- **3**: en-GB - English language used in the United Kingdom
+- **4**: en-US - English language used in the United States
+- **5**: es-ES - Spanish language used in Spain
+- **6**: fr-FR - French language used in France
+- **7**: it-IT - Italian language used in Italy
+- **8**: ko-KR - Korean language used in South Korea
+- **9**: nl-NL - Dutch language used in the Netherlands
+- **10**: pl-PL - Polish language used in Poland
+- **11**: pt-PT - Portuguese language used in Portugal
+- **12**: ru-RU - Russian language used in Russia
+- **13**: zh-CN - Mandarin Chinese language used in mainland China
+
+### Intent Varieties
+
+The `intent_class` column maps to the following intents:
+
+- **0**: abroad
+- **1**: address
+- **2**: app_error
+- **3**: atm_limit
+- **4**: balance
+- **5**: business_loan
+- **6**: card_issues
+- **7**: cash_deposit
+- **8**: direct_debit
+- **9**: freeze
+- **10**: high_value_payment
+- **11**: joint_account
+- **12**: latest_transactions
+- **13**: pay_bill
 
 ## Data Modeling
 
